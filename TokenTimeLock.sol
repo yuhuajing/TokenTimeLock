@@ -50,7 +50,7 @@ contract TokenTimeLock is Ownable {
                 releaseAmountIndex += releaseAmount_[i];
             }
             require(
-                releaseAmountIndex == amount,
+                releaseAmountIndex == amount_,
                 "Total released amount must be equal to the total locked token amount"
             );
         }
